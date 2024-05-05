@@ -1,0 +1,90 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  height: 100vh;
+  margin: 50px;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.canvas {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 0;
+}
+
+.slide {
+  position: fixed;
+  top: 2.5em;
+  width: 800px;
+  height: 500px;
+  background-color: aliceblue;
+  z-index: 1;
+}
+
+.slide-frame {
+  border: 10px solid #737373;
+  border-radius: 10px;
+}
+
+.slide-nav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  background-color: #00adee;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.arrow-button {
+  width: 15%;
+  padding-bottom: 0.3em;
+  font-size: 1rem;
+  border: none;
+  background-color: #00adee;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+
+.hidden {
+  display: none;
+}
+
+div.page {
+  background: white;
+  margin: 0 auto;
+  margin-bottom: 0.25in;
+  position: relative;
+}
+
+div.page[size='letter'] {
+  width: 8.5in;
+  height: 11in;
+}
+
+h1 {
+  color: red;
+}
+
+nav ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+}
+
+@page {
+  size: letter;
+  margin: 0;
+}
